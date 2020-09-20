@@ -6,8 +6,9 @@
 
 ## Starting a HTML file
 
-1. Create a repo named `demo_repo` (or whatever you like)
-2. Create a file named `index.html` and put this content in:
+a. Create a repo named `demo_repo` (or whatever you like)
+
+b. Create a file named `index.html` and put this content in:
 ```html
 <html>
   <head><title>Hello world!</title><meta name="viewport" content="width=device-width, initial-scale=1.0" /></head>
@@ -18,13 +19,15 @@
   </body>
 </html>
 ```
-3. Click "Commit changes".
-4. DONE!
+c. Click "Commit changes".
+
+d. DONE!
 
 ## Creating a CSS file
 
-1. Create a file named `style.css`
-2. Add:
+a. Create a file named `style.css`
+
+b. Add:
 ```css
 * {
   display: block;
@@ -54,7 +57,7 @@ a:link, a:hover, a:active, a:visited {
   color: #000000;
 }
 ```
-3. Click commit changes and add `<link rel="stylesheet" href="style.css" />` to the head element. It should look like:
+c. Click commit changes and add `<link rel="stylesheet" href="style.css" />` to the head element. It should look like:
 ```html
 <html>
   <head>
@@ -69,8 +72,12 @@ a:link, a:hover, a:active, a:visited {
   </body>
 </html>
 ```
-4. Adding rules
-   1. If you put `style.css` in a folder, the attribute href of the link element should look like *`folder/path/to/file/`*`style.css`. **Be sure to escape any non ASCII charecters, such as " " (space) to %20, like `CSS%20styles/style.css`**.
-   2. If you put `style.css` in the root, add a slash, like `/style.css`.
-   3. If you want a absolute link, such as https://brunozhon.github.io/index.html, add *`protocol://pre-domain.domain.extension/foldername/`*`style.css`
-5. Click "Commit changes"
+d. Adding rules:
+
+   A. If you put `style.css` in a folder, the attribute href of the link element should look like *`folder/path/to/file/`*`style.css`. **Be sure to escape any non ASCII charecters, such as " " (space) to %20, like `CSS%20styles/style.css`**.
+   
+   B. If you put `style.css` in the root, add a slash, like `/style.css`.
+   
+   C. If you want a absolute link, such as https://brunozhon.github.io/index.html, add *`protocol://pre-domain.domain.extension/foldername/`*`style.css`
+   
+e. Click "Commit changes"
