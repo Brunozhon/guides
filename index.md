@@ -1,37 +1,76 @@
-## Welcome to GitHub Pages
+# Guides
 
-You can use the [editor on GitHub](https://github.com/Brunozhon/guides/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[Imporve this page](https://github.com/Brunozhon/guides/edit/gh-pages/index.md)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<hr>
 
-### Markdown
+## Starting a HTML file
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+1. Create a repo named `demo_repo` (or whatever you like)
+2. Create a file named `index.html` and put this content in:
+```html
+<html>
+  <head><title>Hello world!</title><meta name="viewport" content="width=device-width, initial-scale=1.0" /></head>
+  <body>
+    <h1>Hello world!</h1>
+    <hr />
+    <p>This is a paragraph.</p>
+  </body>
+</html>
 ```
+3. Click "Commit changes".
+4. DONE!
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Creating a CSS file
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Brunozhon/guides/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. Create a file named `style.css`
+2. Add:
+```css
+* {
+  display: block;
+}
+body, html, head {
+  magrin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.one-fourth {
+  display: inline-block;
+  width: 25%;
+}
+.one-half {
+  display: inline-block;
+  width: 50%;
+}
+.three-fourth {
+  display: inline-block;
+  width: 50%;
+}
+.whole {
+  display: block;
+  width: 100%;
+}
+a:link, a:hover, a:active, a:visited {
+  color: #000000;
+}
+```
+3. Click commit changes and add `<link rel="stylesheet" href="style.css" />` to the head element. It should look like:
+```html
+<html>
+  <head>
+    <title>Hello world!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hello world!</h1>
+    <hr />
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+```
+4. Adding rules
+   1. If you put `style.css` in a folder, the attribute href of the link element should look like *`folder/path/to/file/`*`style.css`. **Be sure to escape any non ASCII charecters, such as " " (space) to %20, like `CSS%20styles/style.css`**.
+   2. If you put `style.css` in the root, add a slash, like `/style.css`.
+   3. If you want a absolute link, such as https://brunozhon.github.io/index.html, add *`protocol://pre-domain.domain.extension/foldername/`*`style.css`
+5. Click "Commit changes"
